@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meddb.NewPatientController">
+    <children>
+        <Button fx:id="buttonAdd" layoutX="327.0" layoutY="525.0" onAction="#handleButtonAdd" prefHeight="35.0" prefWidth="106.0" text="Add" />
+      <TextField fx:id="firstIn" layoutX="113.0" layoutY="96.0" />
+      <TextField fx:id="lastIn" layoutX="386.0" layoutY="97.0" />
+      <TextField fx:id="ageIn" layoutX="113.0" layoutY="139.0" />
+      <TextField fx:id="illnessIn" layoutX="72.0" layoutY="339.0" prefHeight="26.0" prefWidth="468.0" />
+      <TextField fx:id="roomIn" layoutX="386.0" layoutY="191.0" />
+      <TextField fx:id="wardIn" layoutX="113.0" layoutY="191.0" />
+      <TextField fx:id="allergiesIn" layoutX="72.0" layoutY="411.0" prefHeight="26.0" prefWidth="468.0" />
+      <TextArea fx:id="textOut" editable="false" layoutX="590.0" layoutY="59.0" prefHeight="483.0" prefWidth="360.0" style="-fx-font-size: 18;" />
+      <Button fx:id="buttonBack" layoutX="143.0" layoutY="525.0" onAction="#handleButtonBack" prefHeight="35.0" prefWidth="106.0" text="Back" />
+      <Text layoutX="196.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Enter new Patient Information" />
+      <ChoiceBox fx:id="sexBox" layoutX="386.0" layoutY="140.0" prefHeight="25.0" prefWidth="46.0" />
+      <Label layoutX="39.0" layoutY="96.0" prefHeight="26.0" prefWidth="66.0" text="First Name:" textAlignment="CENTER" />
+      <Label layoutX="314.0" layoutY="96.0" prefHeight="26.0" prefWidth="66.0" text="Last Name:" />
+      <Label layoutX="39.0" layoutY="139.0" prefHeight="26.0" prefWidth="66.0" text="Age:" />
+      <Label layoutX="39.0" layoutY="191.0" prefHeight="26.0" prefWidth="66.0" text="Ward" />
+      <Label layoutX="39.0" layoutY="238.0" prefHeight="26.0" prefWidth="66.0" text="Date:" />
+      <Label layoutX="314.0" layoutY="139.0" prefHeight="26.0" prefWidth="66.0" text="Sex:" />
+      <Label layoutX="314.0" layoutY="191.0" prefHeight="26.0" prefWidth="87.0" text="Room:" />
+      <Label layoutX="72.0" layoutY="313.0" prefHeight="26.0" prefWidth="125.0" text="Reason for Admission:" />
+      <Label layoutX="72.0" layoutY="385.0" prefHeight="26.0" prefWidth="98.0" text="Known Allergies:" />
+      <DatePicker fx:id="dateBox" layoutX="109.0" layoutY="239.0" />
+    </children>
+</AnchorPane>

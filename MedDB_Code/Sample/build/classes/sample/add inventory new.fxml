@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addInventoryController">
+   <children>
+      <Label fx:id="addInventoryText" layoutX="240.0" layoutY="14.0" text="Add inventory">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="whatsbeingaddedText" layoutX="91.0" layoutY="65.0" text="What are you adding?" />
+      <Label fx:id="dateaddedText" layoutX="133.0" layoutY="100.0" text="Date added" />
+      <Label fx:id="quantityaddedText" layoutX="142.0" layoutY="137.0" text="Quantity" />
+      <Label fx:id="YournameText" layoutX="135.0" layoutY="204.0" text="Your name" />
+      <TextField fx:id="whatsbeingaddedField" layoutX="225.0" layoutY="61.0" />
+      <TextField fx:id="QuantityaddedField" layoutX="224.0" layoutY="133.0" prefHeight="26.0" prefWidth="105.0" />
+      <TextField fx:id="yournameField" layoutX="224.0" layoutY="200.0" prefHeight="26.0" prefWidth="106.0" />
+      <Button fx:id="addButton_Inventory" layoutX="501.0" layoutY="239.0" mnemonicParsing="false" onAction="#addbtn" text="Add" />
+      <Button layoutX="14.0" layoutY="239.0" mnemonicParsing="false" onAction="#backbtn" text="Back" />
+      <DatePicker fx:id="dateaddedField" layoutX="225.0" layoutY="96.0" />
+      <Label fx:id="quantityaddedText1" layoutX="142.0" layoutY="172.0" text="Room" />
+      <TextField fx:id="roomaddedtext" layoutX="224.0" layoutY="168.0" prefHeight="26.0" prefWidth="105.0" />
+   </children>
+</AnchorPane>
